@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+@media (max-width: 1080px) {
+    html {
+        font-size: 93.75%; /* 15px */
+    }
+}
+
+@media (max-width: 720) {
+    html {
+        font-size: 87.5%; /* 14px */
+    }
+}
+
+/* Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.6rem 0 1.6rem;
+    position: relative;
+}
+
+.gradient {
+    width: 100%;
+    height: 150%;
+    background: radial-gradient(59.3% 59.3% at 54.07% 40.7%, rgba(0, 242, 39, 0.15) 0%, rgba(196, 196, 196, 0) 100%);
+    transform: matrix(1, -0.05, 0.05, 1, 0, 0);
+    position: absolute;
+    top: -50px;
+}
+
+.logo {
+    width: 9rem;
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo span {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #00C314;
+}
+
+.links {
+    width: 18rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: black;
+}
+
+/* Buttons */
+.download-button {
+    width: 12rem;
+    height: 2.4rem;
+    background: #4C35E4;
+    color: white;
+    border: none;
+    border-radius: 0.6rem;
+
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.download-button.header {
+    margin-right: 5rem;
+}
+
+/* Introduction */
+.introduction {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.introduction-text {
+    width: 32rem;
+}
+
+.introduction-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.6rem;
+}
+
+.introduction-text p {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.download-now {
+    margin-top: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.how-works {
+    margin-left: 1.7rem;
+    font-weight: 500;
+}
+
+/* Instructions */
+.instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 11rem;
+}
+
+.instructions h1 {
+    font-size: 2.25rem;
+}
+
+.instructions h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.plant-instructions {
+    width: 51.8rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.8rem;
+}
+
+.instruction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.instruction h1 {
+    font-size: 1.6rem;
+}  
+
+.instruction span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    width: 12.6rem;
+}  
+
+.dibble img {
+    width: 13.1rem;
+}
+
+.reap img {
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+.vase img {
+    width: 10.3rem;
+    margin-bottom: 1rem;
+}
+
+/* App Description */
+.app-description {
+    width: 80vw;
+    height: 90vh;
+    margin-top: 15rem;
+    background: linear-gradient(125.8deg, #38EF7D 15.46%, #11998E 103.34%);
+    border-radius: 3rem;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.informations h1 {
+    font-size: 2.5rem;
+    width: 29.6rem;
+}
+
+.informations p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    width: 35.5rem;
+}
+
+/* Avaliations */
+.avaliations {
+    margin-top: 10.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avaliations h1 {
+    font-size: 2.5rem;
+}
+
+.avaliations h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    width: 39.8rem;
+    text-align: center;
+}
+
+.avaliation-cards {
+    width: 100%;
+    margin-top: 8.75rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.avaliation-cards :nth-child(2) {
+    margin-top: -6rem;
+}
+
+/* Download */
+.download {
+    width: 80vw;
+    height: 60vh;
+    margin-top: 10rem;
+    background: #292929;
+    border-radius: 3rem;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.download h1 {
+    font-size: 2.5rem;
+    width: 26.3rem;
+}
+
+.download p {
+    margin-top: 1.6rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    width: 28.2rem;
+}
+
+.stores-images {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 135px 135px;
+}
+
+.stores-images img {
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    height: 70vh;
+    margin-top: 10.5rem;
+    background: linear-gradient(125.8deg, #38EF7D 15.46%, #11998E 103.34%);
+    color: white;
+    border-radius: 3.75rem 3.75rem 0 0;
+}
+
+.footer-container {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-image img {
+    width: 80%;
+}
+
+.about-us h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.contact-us {
+    margin-top: 3rem;
+}
+
+.contact-us span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 1.6rem;
+}
+
+.contact-us p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.credits h1 {
+    font-size: 2rem;
+}
+
+.credits {
+    height: 15%;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
